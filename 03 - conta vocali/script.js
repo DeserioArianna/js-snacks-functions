@@ -4,6 +4,11 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
+/**
+ * 
+ * @param {*} word 
+ * @returns 
+ */
 function numeroVocali(word) {
     const vocali = ["a","e","i","o","u"];
     let count = 0;
