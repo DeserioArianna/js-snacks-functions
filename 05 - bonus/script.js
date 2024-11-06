@@ -9,10 +9,26 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-
+/**
+ * 
+ * @param {*} nome 
+ */
+const saluta = (nome) => {
+    const oraCorrente = new Date().getHours();
+    
+    let saluto;
+    if (oraCorrente <= 13) {
+        saluto = "Buongiorno";
+    } else if (oraCorrente > 13 && oraCorrente <= 17) {
+        saluto = "Buonpomeriggio"
+    } else {
+        saluto = "Buonasera"
+    }
+    return `${saluto} ${nome}`;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(saluta(name));
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
