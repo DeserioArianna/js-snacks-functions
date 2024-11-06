@@ -8,7 +8,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 /**
  * 
  * @param {*} nomi 
- * @returns {array}
+ * @returns {*} array
  */
 function estraiIniziali(nomi) {
     return nomi.map(nome => nome.charAt(0));

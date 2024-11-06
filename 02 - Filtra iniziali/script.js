@@ -4,6 +4,12 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+/**
+ * 
+ * @param {*} array 
+ * @param {*} lettera 
+ * @returns 
+ */
 function filtraLetteraConParola(array, lettera) {
     return array.filter(parola => parola.charAt(0).toLowerCase() === lettera.toLowerCase());
 }
